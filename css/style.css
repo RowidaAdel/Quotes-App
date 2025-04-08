@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+/* & Styling for the main container */
+.container {
+    background-image: url(../images/bg.jpg); /* Background image for the app */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* & Styling for the main heading */
+h1 {
+    font-family: 'Impact', 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+p {
+    font-size: 35px;
+    text-align: center;
+}
+
+button {
+    background-color: #fcbdb3;
+    padding: 30px 70px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #b8b6b6;
+    border-radius: 0px 30px 0px 30px;
+    animation: pulseText 1.5s infinite ease-in-out;
+}
+
+/* ^ Button animation effect */
+@keyframes pulseText {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    background-color: #9cadaa;
+}
